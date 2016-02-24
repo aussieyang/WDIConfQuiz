@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20160224043225) do
 
   create_table "questions", force: :cascade do |t|
-    t.string  "name"
+    t.string  "content"
     t.integer "speaker_no"
   end
 
