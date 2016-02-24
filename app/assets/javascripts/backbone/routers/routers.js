@@ -13,6 +13,17 @@ var Router = Backbone.Router.extend({
     // write function here that renders the quiz template
     // grabs the data from the api
     // sends back the results and saves them
+
+    var quiz = new Questions();
+
+    quiz.fetch().done(function() {
+      console.log(quiz);
+      debugger
+      // does it need the collection in here?
+      // var quizView = new QuizView({ model: quiz})
+      // add back to the page
+      // $('main').html( quizView.render().el );
+    });
   },
 
   showEnd: function() {
@@ -20,3 +31,11 @@ var Router = Backbone.Router.extend({
   }
 
 });
+
+$(document).ready( function() {
+  console.log("call for router");
+  var router = new Router();
+  Backbone.history.start();
+});
+
+
