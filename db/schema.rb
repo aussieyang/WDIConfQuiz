@@ -11,11 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224043225) do
+ActiveRecord::Schema.define(version: 20160224052811) do
 
   create_table "questions", force: :cascade do |t|
     t.string  "content"
     t.integer "speaker_no"
+    t.string  "a"
+    t.string  "b"
+    t.string  "c"
+    t.string  "d"
   end
 
 end
