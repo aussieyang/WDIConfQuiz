@@ -1,3 +1,5 @@
+console.log("hello gromit");
+
 var Router = Backbone.Router.extend({
   routes: {
     "": "showIndex",
