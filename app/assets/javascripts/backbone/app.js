@@ -1,52 +1,30 @@
-// Page for the quiz view
-
-// var QuizView = Backbone.View.extend {
-//
-//   // Need to append a class and a tag maybe?
-//   tagName: 'div',
-//   className: 'container',
-//
-//   var options = {
-//     url: 'http://localhost:3000/api/questions',
-//     method: 'get',
-//     dataType: 'json',
-//   },
-//
-//   render: function() {
-//
-//   }
-//
-// }
+console.log('loading');
 
 var Question = Backbone.Model.extend({
 	urlRoot: 'http://localhost:3000/api/questions'
 });
-
 
 var Questions = Backbone.Collection.extend({
 	model: Question,
 	url: 'http://localhost:3000/api/questions'
 });
 
-var options = {
-  url: 'http://localhost:3000/api/questions',
-  method: 'get',
-  dataType: 'json'
-},
-
 
 var Router = Backbone.Router.extend({
 
 routes: {
-		"index": "showIndex",
-		"": "showQuestion"
+		"": "showIndex",
+		"#question": "showQuestion"
+		"#question2":
+
 },
 
 showIndex: function(){
+
 },
 
 showQuestion: function(){
-	question = new Question({id: 11});
+	question = new Question({id: 21});
 	console.log(question);
 	question.fetch().done(function(){
 		console.log(question);
@@ -58,6 +36,8 @@ showQuestion: function(){
 	});
 }
 
+
+
 });
 
 $(document).ready( function() {
@@ -65,3 +45,13 @@ $(document).ready( function() {
   var router = new Router();
   Backbone.history.start();
 });
+
+
+
+// for (var i = 0; i < questions.length; i++){
+// 	console.log(questions[i].get('content'));
+// }
+
+
+
+// $('#qid').html(question.get('content'));
