@@ -13,8 +13,9 @@ var Questions = Backbone.Collection.extend({
 var Router = Backbone.Router.extend({
 
 routes: {
-		"hhh": "showIndex",
-		"": "showQuestion"
+		"": "showIndex",
+		"#question": "showQuestion"
+		"#question2":
 
 },
 
