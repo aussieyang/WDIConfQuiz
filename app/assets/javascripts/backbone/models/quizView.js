@@ -9,7 +9,7 @@ var QuizView = Backbone.View.extend {
   var options = {
     url: 'http://localhost:3000/api/questions',
     method: 'get',
-    dataType: 'json',
+    dataType: 'json'
   },
 
   render: function() {

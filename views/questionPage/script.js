@@ -22,7 +22,7 @@ showIndex: function(){
 },
 
 showQuestion: function(){
-	question = new Question({id: 11});
+	question = new Question({id: 21});
 	console.log(question);
 	question.fetch().done(function(){
 		console.log(question);
