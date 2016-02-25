@@ -17,7 +17,5 @@
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
-//= require backbone/torture_quiz
-//= require_tree .
-
-
+//= require backbone/app
+//= require backbone/questionAnimation
