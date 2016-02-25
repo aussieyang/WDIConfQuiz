@@ -1,3 +1,4 @@
+
 var Question = Backbone.Model.extend({
 	urlRoot: 'http://localhost:3000/api/questions'
 });
@@ -7,8 +8,45 @@ var Questions = Backbone.Collection.extend({
 	url: 'http://localhost:3000/api/questions'
 });
 
-question = new Question({id: 1});
-console.log(question);
 
-$('#qid').html(question: content);
+var Router = Backbone.Router.extend({
+
+routes: {
+		"hhh": "showIndex",
+		"": "showQuestion"
+
+},
+
+showIndex: function(){
+
+},
+
+showQuestion: function(){
+	question = new Question({id: 11});
+	console.log(question);
+	question.fetch().done(function(){
+		console.log(question);
+		// $('#qid').html(question.get('content'));
+	});
+}
+
+
+
+});
+
+$(document).ready( function() {
+  console.log('Initiating router...');
+  var router = new Router();
+  Backbone.history.start();
+});
+
+
+
+// for (var i = 0; i < questions.length; i++){
+// 	console.log(questions[i].get('content'));
+// }
+
+
+
+// $('#qid').html(question.get('content'));
 
