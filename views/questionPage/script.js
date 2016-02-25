@@ -26,7 +26,11 @@ showQuestion: function(){
 	console.log(question);
 	question.fetch().done(function(){
 		console.log(question);
-		// $('#qid').html(question.get('content'));
+		$('#qid').html(question.get('content'));
+		$('#answer1').html(question.get('a'));
+		$('#answer2').html(question.get('b'));
+		$('#answer3').html(question.get('c'));
+		$('#answer4').html(question.get('d'));
 	});
 }
 
