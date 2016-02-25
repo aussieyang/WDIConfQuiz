@@ -46,3 +46,5 @@ group :development do
 end
 
 gem "rails-backbone"
+
+gem 'rack-cors', :require => 'rack/cors'
