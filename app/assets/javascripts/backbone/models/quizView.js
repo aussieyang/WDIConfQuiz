@@ -22,10 +22,17 @@ var Question = Backbone.Model.extend({
 	urlRoot: 'http://localhost:3000/api/questions'
 });
 
+
 var Questions = Backbone.Collection.extend({
 	model: Question,
 	url: 'http://localhost:3000/api/questions'
 });
+=======
+  var options = {
+    url: 'http://localhost:3000/api/questions',
+    method: 'get',
+    dataType: 'json'
+  },
 
 
 var Router = Backbone.Router.extend({
