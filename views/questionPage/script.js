@@ -53,4 +53,3 @@ $(document).ready( function() {
 
 
 // $('#qid').html(question.get('content'));
-
