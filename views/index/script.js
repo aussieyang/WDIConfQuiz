@@ -26,6 +26,10 @@ var MainMenuView = Backbone.View.extend({
 });
 
 
+//========== SETUP PAGE FUNCTIONS ==========//
+
+
+
 //=========== ROUTER DECLARATION ===========//
 
 var Router = Backbone.Router.extend({
