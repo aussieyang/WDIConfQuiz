@@ -1,1 +1,0 @@
-// view for the completed quiz

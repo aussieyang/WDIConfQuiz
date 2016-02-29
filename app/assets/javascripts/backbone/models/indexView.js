@@ -1,1 +1,0 @@
-// view for the index/start page
